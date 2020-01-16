@@ -1,0 +1,166 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: white;
+ }
+
+ .gridContainer {
+     display: grid;
+     grid-template-areas: 'header header header header header header' 'navbar navbar navbar navbar navbar navbar' 'main main main main main main' 'asideBar asideBar asideBar content content content' 'footer footer footer footer footer footer';
+     grid-gap: 20px;
+     padding: 10px;
+ }
+
+ header {
+     background-image: url('/images/header.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 50vh;
+     grid-area: header;
+     position: relative;
+ }
+
+ .navbar {
+     background-color: purple;
+     grid-area: navbar;
+     height: 50px;
+     text-align: center;
+ }
+
+ .navbar ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ .navbar li {
+     display: inline-block;
+     padding: 16px 60px;
+ }
+
+ .navbar li a {
+     color: rgb(235, 243, 245);
+     text-align: center;
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ .navbar ul li:hover {
+     background-color: violet;
+ }
+
+ #main {
+     background-color: rgb(238, 188, 138);
+     grid-area: main;
+     text-align: center;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 10px;
+ }
+
+ #main img {
+     width: 30%;
+ }
+
+ figure {
+     text-align: center;
+ }
+
+ figcaption {
+     padding: 5px;
+     margin: 10px;
+     font-size: 18px;
+     font-weight: bold;
+ }
+
+ .content {
+     grid-area: content;
+     background-color: rgb(241, 240, 239);
+     padding: 10px 20px;
+ }
+
+ p, h2 {
+     padding: 10px;
+     font-style: normal;
+     font-weight: 400;
+ }
+
+ .aside {
+     grid-area: asideBar;
+     background-color: rgb(241, 240, 239);
+     width: 180px;
+ }
+
+ .aside ul {
+     list-style-type: none;
+ }
+
+ .aside ul li a {
+     padding: 10px;
+     text-decoration: none;
+     font-weight: bold;
+     line-height: 40px;
+     color: purple;
+ }
+
+ .aside ul li:hover {
+     background-color: violet;
+     padding-left: 4px;
+     transition: all 3s ease;
+     text-decoration: underline;
+ }
+
+ footer {
+     grid-area: footer;
+     background-color: purple;
+     height: 50px;
+ }
+
+ footer a {
+     padding: 10px;
+     float: right;
+     text-decoration: none;
+     font-size: 1rem;
+     color: rgb(235, 243, 245);
+ }
+
+ footer a:hover {
+     padding-right: 20px;
+     text-decoration: underline;
+     transition: all 2s ease-in;
+ }
+
+ @media (max-width: 768px) {
+     header {
+         background-image: url('/images/header.jpg');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         height: 50vh;
+         grid-area: header;
+         position: relative;
+     }
+     .navbar {
+         height: 200px;
+     }
+     .navbarList {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+     }
+     #main {
+         display: grid;
+         grid-template-columns: 1fr;
+     }
+     #main figcaption {
+         width: 120px;
+         padding: 4px;
+         margin-right: auto;
+         margin-left: auto;
+     }
+ }

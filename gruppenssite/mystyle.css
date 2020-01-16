@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+   grid-template-areas: 'navbar navbar navbar navbar navbar navbar navbar' 
+    'header header header header header header header' 
+    'aside-left main main main main main aside-right'
+    'aside-left myImages myImages myImages myImages myImages aside-right' 
+    'aside-left codeAlbums codeAlbums codeAlbums codeAlbums codeAlbums aside-right'
+' footer footer footer footer footer footer footer'; 
+    grid-gap: 1rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container>* {
+    margin: 10px 40px;
+    border-radius: 14px;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #e2ebe0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 6rem;
+}
+
+#nav li:hover {
+    background-color: rgb(190, 209, 211);
+    border-radius: 20px;
+}
+
+.navbar li a {
+    color: #222;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#nav #logo-image {
+    width: 3.5rem;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+
+#nav #logo-image:hover {
+    transform: rotateX(720deg);
+    transform: rotateY(-720deg);
+    transition: all 2s ease-in;
+}
+
+#myHeader {
+grid-area: header;
+    background-image: url('./myImages/header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: 'Indie Flower', cursive;
+    
+
+}
+
+#main {
+    grid-area: main;
+    background-color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#main .my-content-text {
+    padding: 10px;
+}
+
+#aside-left {
+    grid-area: aside-left;
+    background-color:  whitesmoke
+}
+
+#aside-right {
+    grid-area: aside-right;
+    background-color:whitesmoke;
+}
+
+.asides .aside-list {
+    list-style-type: none;
+}
+
+.asides .aside-list li {
+    padding: 10px;
+}
+
+.asides .aside-list li a {
+    text-decoration: none;
+    color: rgb(136, 125, 125);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.asides .aside-list .nested {
+    color: sílver;
+    font-size: 17px;
+}
+
+.asides h4 {
+    padding: 10px;
+    color: rgb(44, 41, 41);
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Indie Flower', cursive;
+}
+
+#myAlbum {
+    grid-area: myImages;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-gap: 10px;
+   
+}
+#myAlbum img{
+width: 70%;
+height:20rem;
+border: 1px solid #e1e1e1;
+border-radius: 100%;
+margin-top: 10px;
+}
+#codeAlbums {
+    grid-area: codeAlbums;
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+#codeAlbums img{
+grid-area: codeAlbums;
+width:100%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(102, 35, 91);
+    height: 140px;
+}

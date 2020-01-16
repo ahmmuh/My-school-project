@@ -1,0 +1,19 @@
+@media(max-width: 768px) {
+.container{
+background-color: red;
+display: flex;
+flex-direction: column;
+width: 100%;
+
+}
+.navbar {
+display: flex;
+flex-direction: column;
+height: auto;
+
+}
+.navbar ul {
+display: grid;
+grid-template-columns: 1fr;
+}
+}

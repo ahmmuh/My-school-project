@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Site</title>
+
+    <!-- här länkar jag till fontawesome css för att kunna använda olika ikoner -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- mina css filer, en style för huvud sidan och en för small screen -->
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="myResponsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar" id="nav">
+            <img src="myImages/logo.jpg" alt="logo" id="logo-image">
+            <ul class="menu-list">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="larsson.html">Rebeckas sida</a></li>
+                <li><a href="hook.html">Karins sida</a></li>
+                <li><a href="muhammed.html">Ahmeds sida</a></li>
+            </ul>
+        </nav>
+        <header id="myHeader">
+            <h1>Välkommen till Ahmeds sida !!</h1>
+            <p>Vi hålle på med webbutveckling</p>
+        </header>
+        <main id="main">
+            <h2>Välkommen Makesite !!</h2>
+            <p class="my-content-text">Sedan 2015 har vi sysslat med webbutveckling med olika programmeringsspråk,
+                bibliotek och ramverk som t.ext React, Angular, vujs och ember.</p>
+        </main>
+        <aside id="aside-left" class="asides">
+            <h4>Vad vi använder för backend</h4>
+            <ul class="aside-list">
+                <li><a href="#">Nodejs</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Firebase</a></li>
+                <li><a href="#">SQL</a></li>
+            </ul>
+        </aside>
+        <aside id="aside-right" class="asides">
+            <h4>Vad vi använder för frontend</h4>
+            <ul class="aside-list">
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Angular</a></li>
+                <li><a href="#">Ember</a></li>
+                <li>
+                    CSS och css frameworks
+                    <ul class="nested">
+                        <li>Bootstrap</li>
+                        <li>Semantic UI</li>
+                        <li>Foundation</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </aside>
+        <div id="myAlbum">
+            <figure>
+                <img src="./myImages/bild1.jpg" alt="">
+                <figcaption>Frontendutvecklare</figcaption>
+            </figure>
+            <figure>
+                <img src="./myImages/bild2.jpg" alt="">
+                <figcaption>Wordpress & E-commerce utvecklare</figcaption>
+            </figure>
+            <figure>
+                <img src="./myImages/bild3.jpg" alt="">
+                <figcaption>Django utvecklare</figcaption>
+            </figure>
+            <figure>
+                <img src="./myImages/bild4.jpg" alt="">
+                <figcaption>React och Angular utvecklare</figcaption>
+            </figure>
+        </div>
+
+        <section id="codeAlbums">
+            <figure>
+
+
+                <img src="./myImages/img4.jpg" alt="">
+                <figcaption>code</figcaption>
+
+            </figure>
+            <figure>
+                <img src="./myImages/img1.jpg" alt="">
+
+                <figcaption>code 2</figcaption>
+            </figure>
+            <figure>
+                <img src="./myImages/img2.jpg" alt="">
+                <figcaption>code 3</figcaption>
+
+            </figure>
+            <figure>
+
+                <img src="./myImages/img3.jpg" alt="">
+                <figcaption>code 4</figcaption>
+            </figure>
+        </section>
+
+        <footer>
+            <ul id="footer-list">
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ul>
+            <a href="#">&copy; 2020 created by Ahmed</a>
+        </footer>
+    </div>
+</body>
+
+</html>
