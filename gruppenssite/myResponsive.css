@@ -1,6 +1,5 @@
 @media(max-width: 768px) {
 .container{
-background-color: red;
 display: flex;
 flex-direction: column;
 width: 100%;
@@ -13,6 +12,21 @@ height: auto;
 
 }
 .navbar ul {
+display: grid;
+grid-template-columns: 1fr;
+}
+
+#myAlbum{
+display: flex;
+flex-direction: column;
+
+}
+#myAlbum img{
+width: 100%;
+border-radius: 0px 6px 6px 0px;
+}
+
+#codeAlbums {
 display: grid;
 grid-template-columns: 1fr;
 }
